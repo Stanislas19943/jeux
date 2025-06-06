@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StanConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>StanNetwork</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Amis</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="#">Notifications <span id="notificationCount">0</span></a></li>
+                    <li><a href="#">Profil</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Publication Box -->
+        <div class="post-box">
+            <h3>Bienvenue, Stan</h3>
+            <textarea id="newPost" placeholder="Quoi de neuf ?"></textarea>
+            <button onclick="postUpdate()">Publier</button>
+        </div>
+
+        <!-- Posts Section -->
+        <div id="posts" class="posts">
+            <!-- Dynamic posts will appear here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 StanConnect - Tous droits réservés</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
